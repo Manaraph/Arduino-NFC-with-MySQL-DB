@@ -107,8 +107,10 @@ public class SerialTest implements SerialPortEventListener {
                             st = conn.getConnection().createStatement();
 
                             String insertSQL = "INSERT INTO attendance (S_N, Tag_Number) VALUES (NULL,'" + inputLine + "')";
-
+                            //String insertSQL2 = "UPDATE cpe322results SET Attendance = 'Present' WHERE (NULL,'" + inputLine + "')";
+                            
                             st.executeUpdate(insertSQL);
+                           //st.executeUpdate(insertSQL2);
 
                             System.out.println(inputLine);
             

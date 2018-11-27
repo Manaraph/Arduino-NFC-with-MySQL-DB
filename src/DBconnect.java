@@ -24,7 +24,7 @@ public class DBconnect {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             String myurl = "jdbc:mysql://localhost:3306/examprojectdb";      
-            connection = DriverManager.getConnection(myurl, "root", "");       //get a connection
+            connection = DriverManager.getConnection(myurl, "root", "manamite");       //get a connection
             
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "There was an error while trying to Establish a Connection \n" + e 
